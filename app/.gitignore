@@ -1,0 +1,13 @@
+*.iml
+.gradle
+
+.DS_Store
+/build
+/captures
+app.iml
+/app/tinker
+/resguard
+
+
+build-cache.lock
+build-cache/

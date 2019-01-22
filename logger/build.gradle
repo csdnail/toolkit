@@ -1,0 +1,48 @@
+apply plugin: 'java'
+
+
+
+dependencies {
+    compileOnly library_version.android
+}
+
+task restoreConfig {
+    doLast {
+        useConfig(false, true)
+    }
+}
+uploadArchives.finalizedBy restoreConfig
+
+task uploadRelease() {
+    finalizedBy uploadArchives
+    doFirst {
+        useConfig(false, true)
+    }
+}
+
+task uploadDebug() {
+    finalizedBy uploadArchives
+    doFirst {
+        useConfig(true, false)
+    }
+}
+
+
+if (!gradle.startParameter.taskRequests.empty && !gradle.startParameter.taskRequests.first().args.empty) {
+    String param = gradle.startParameter.taskRequests.first().args.first().toLowerCase()
+    println param
+    if (param.contains("uploaddebug")) {
+        POM_ARTIFACT_ID = "logger-debug"
+    }
+}
+
+
+// default isDebug=false, isFinal=true
+def useConfig(boolean isDebug, boolean isFinal) {
+    println "===== useConfig : ${isDebug} & ${isFinal} ============ "
+    def loggerFilePath = project(':logger').projectDir.absolutePath + "/src/main/java/log/Log.java"
+    def updatedDebug = new File(loggerFilePath).getText('UTF-8')
+            .replaceAll("static .*isDebug\\s?=\\s?[a-z]*", "static " + (isFinal ? "final " : "") + "boolean isDebug = " + isDebug.toString())
+    new File(loggerFilePath).write(updatedDebug, 'UTF-8')
+}
+

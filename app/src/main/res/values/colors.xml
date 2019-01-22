@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black10">#19000000</color>
+
+    <color name="divider_bg_dd">#dddddd</color>
+    <color name="colorfb1f1f">#fb1f1f</color>
+    <color name="colorff6c32">#ff6c32</color>
+    <color name="colorff1f29">#ff1f29</color>
+
+    <color name="no_clickable_font_color">#a0a0a0</color>
+
+    <color name="colorfffddd">#fffddd</color>
+    <color name="colorffde3b">#ffde3b</color>
+    <color name="colorffb500">#ffb500</color>
+    <color name="colorefefef">#efefef</color>
+    <color name="colorCC000000">#CC000000</color>
+    <color name="color99000000">#99000000</color>
+    <color name="coloreeeeee">#eeeeee</color>
+
+    <color name="white20">#33FFFFFF</color>
+    <color name="black50">#80000000</color>
+    <color name="black60">#99000000</color>
+    <color name="black30">#4d000000</color>
+    <color name="black80">#CC000000</color>
+    <color name="black70">#B2000000</color>
+    <color name="white30">#4dFFFFFF</color>
+    <color name="white40">#66FFFFFF</color>
+    <color name="white60">#99FFFFFF</color>
+    <color name="white80">#CCFFFFFF</color>
+    <color name="color999">#999999</color>
+    <color name="color333">#333333</color>
+    <color name="color32ffffff">#32ffffff</color>
+    <color name="color99fafafa">#99fafafa</color>
+    <color name="gray_ccc">#ccc</color>
+    <color name="black_trans75">#BF000000</color>
+
+    <color name="colorffe715">#ffe715</color>
+
+    <color name="geeen_end_color">#00DF68</color>
+    <color name="colorffa347">#ffa347</color>
+
+    <color name="color5fa0a0a0">#5fa0a0a0</color>
+    <color name="colorFFCDCDCD">#FFCDCDCD</color>
+    <color name="default_search_color">#B2FFFFFF</color>
+
+    <color name="red_500">#ef4836</color>
+
+    <color name="image_num_color">#888888</color>
+    <color name="image_save_color">#ffb500</color>
+    <color name="image_browser_bg_color">#222222</color>
+    <color name="image_browser_content">#c8c8c8</color>
+
+
+    <color name="colorf7f7f7">#f7f7f7</color>
+    <color name="colorf8f8f8">#f8f8f8</color>
+    <color name="colorfcfcfc">#fcfcfc</color>
+    <color name="fontColor222">#222222</color>
+    <color name="fontColor777">#888888</color>
+    <color name="fontColorRed">#ffb500</color>
+    <color name="color_banner">#fffddd</color>
+    <color name="search_content_bgcolor">#eeeeee</color>
+    <color name="edit_tint">#7fffffff</color>
+    <color name="black_trans20">#c0c0c0</color>
+    <color name="main_style_color">#fdfdfd</color>
+    <color name="status_bar_color">#ffffffff</color>
+
+    <color name="gray_bg_fafafa">#fafafa</color>
+    <color name="colorffcb0b">#ffcb0b</color>
+    <color name="colorbe8a00">#be8a00</color>
+    <color name="my_item_p">#a9a9a9</color>
+    <color name="color222222">#222222</color>
+    <color name="color1a1a1a">#1a1a1a</color>
+    <color name="black_trans14">#23000000</color>
+
+    <color name="color222222alper30">#4D222222</color>
+    <color name="setting_bg">#f4f4f4</color>
+
+
+    <color name="sign_up_info_text_color">#202020</color>
+    <color name="divider_color">#E5E5E5</color>
+
+
+    <color name="refresh_banner_bg_color">#f4f4f4</color>
+
+
+    <color name="colorc8c8c8">#c8c8c8</color>
+
+
+    <color name="color888888">#888888</color>
+    <color name="colorhalfgreen">#80ffb500</color>
+
+    <color name="ripple_pressed_bg_color">#ff909090</color>
+
+    <color name="color_ffde3b">#ffde3b</color>
+    <color name="color_99ffde3b">#99ffde3b</color>
+    <color name="color_ff1f29">#ff1f29</color>
+    <color name="colore6222222">#e6222222</color>
+    <color name="colore6000000">#e6000000</color>
+
+    <color name="color20white">#33ffffff</color>
+    <color name="border">#dddddd</color>
+    <!-- 评论-->
+
+    <color name="gray_4e">#4e4e4e</color>
+    <color name="transparent_gray">#55000000</color>
+
+    <color name="gallery_transient_bg">#33222222</color>
+
+    <color name="colorffcb15">#ffcb15</color>
+    <color name="color2feafe">#2feafe</color>
+    <color name="colorf35a5a">#f35a5a</color>
+    <color name="color666666">#666666</color>
+    <color name="hot_comment_bg">#f8f8f8</color>
+    <color name="hot_comment_dark_bg">#33000000</color>
+    <color name="hot_comment_divider">#f4f4f4</color>
+
+    <color name="alpher_02">#04000000</color>
+    <color name="alpher_30">#4D000000</color>
+    <color name="alpher_50">#80000000</color>
+    <color name="comment_collection">#ffb500</color>
+    <color name="favorite_text_color">#ffb500</color>
+
+    <color name="icon_placeholder">#eeeeee</color>
+    <color name="login_third_bg_qq">#9924a8ea</color>
+
+    <color name="instruction_bg">#4d000000</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_light_grey">#33000000</color>
+    <color name="color0bab07">#0bab07</color>
+    <color name="colore7ebeb">#e7ebeb</color>
+    <color name="login_dialog_bg_color">#4d000000</color>
+    <color name="color_hotcomment_divider">#e7eded</color>
+
+    <!--vote-->
+    <color name="vote_green">#ffb500</color>
+    <color name="vote_yellow">#ff4e56</color>
+    <color name="vote_add_one">#ff4e56</color>
+    <color name="color_ff051a">#ff051a</color>
+
+    <color name="font_size_fill_color">#dddddf</color>
+    <color name="color66ffb500">#66ffb500</color>
+    <color name="colorB3ffb500">#B3ffb500</color>
+    <color name="colorcccccc">#cccccc</color>
+    <color name="color555555">#555555</color>
+
+    <color name="colorafafaf">#afafaf</color>
+
+    <color name="footer_bar_sel_color">#222222</color>
+    <color name="footer_bar_un_sel_color">#888888</color>
+
+    <color name="colorff4e56">#ff4e56</color>
+    <color name="colorfea531">#fea531</color>
+
+    <color name="alpher_50_black">#80000000</color>
+
+    <color name="color2cec94">#2cec94</color>
+    <color name="colorfbb38b">#fbb38b</color>
+    <color name="color10d93e">#10d93e</color>
+    <color name="color10black">#1A000000</color>
+
+    <color name="colore7e7e7">#e7e7e7</color>
+
+    <color name="color1a9bfc">#1a9bfc</color>
+    <color name="color4d4d4d">#4d4d4d</color>
+    <color name="colorfb9900">#fb9900</color>
+
+    <color name="default_blue">#4e78bc</color>
+    <color name="default_bg">#fafafa</color>
+
+
+    <color name="comment_transparent">#16000000</color>
+
+
+    <color name="guess_red">#ca1621</color>
+
+    <color name="home_padding_head">#FFFFFFFF</color>
+    <color name="home_padding_head_live">#00000000</color>
+    <color name="home_padding_foot">#FFFFFFFF</color>
+    <color name="home_padding_foot_live">#00000000</color>
+
+    <color name="colorffde28">#ffde28</color>
+    <color name="sixd">#dddddd</color>
+    <color name="colorff051a">#ff051a</color>
+
+    <color name="color000000">#000000</color>
+    <color name="colorffffff">#ffffff</color>
+    <color name="colorB3000000">#B3000000</color>
+    <color name="colorf4f4f4">#f4f4f4</color>
+    
+    <color name="colorfddbab">#fddbab</color>
+
+    <color name="colorff000000">#ff000000</color>
+    <color name="color00000000">#00000000</color>
+</resources>

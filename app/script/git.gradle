@@ -1,0 +1,59 @@
+import java.text.SimpleDateFormat
+
+preBuild {}.doFirst {
+    saveBuildTime()
+}
+
+def getGitVersion() {
+    return 'git rev-parse --short HEAD'.execute(null, project.rootDir).text.trim()
+}
+
+def getBuildTime() {
+    def df = new SimpleDateFormat("yyyy-MM-dd' 'HH:mm")
+    df.setTimeZone(TimeZone.getDefault())
+    return df.format(new Date())
+}
+
+def getBuildUser() {
+    def proc = "git config user.name".execute();
+    return proc.text.trim()
+}
+
+def gitSha() {
+    try {
+        String gitRev = 'git rev-parse --short HEAD'.execute(null, project.rootDir).text.trim()
+        if (gitRev == null) {
+            throw new GradleException("can't get git rev, you should add git to system path or just input test value, such as 'testTinkerId'")
+        }
+        return gitRev
+    } catch (Exception e) {
+        throw new GradleException("can't get git rev, you should add git to system path or just input test value, such as 'testTinkerId'")
+    }
+}
+
+def saveBuildTime() {
+    println " saveBuildTime to assets \n "
+
+    File assets = new File("${project.projectDir.absolutePath}/src/main/assets")
+    if (!assets.exists()) {
+        assets.mkdirs()
+    }
+
+    File file = new File(assets, "build_time.xml")
+    if (file.exists()) {
+        file.delete()
+    }
+
+    def printWriter = file.newPrintWriter() //
+    printWriter.write(getBuildTime())
+    printWriter.flush()
+    printWriter.close()
+}
+
+ext {
+    getGitVersion = this.&getGitVersion
+    getBuildTime = this.&getBuildTime
+    saveBuildTime = this.&saveBuildTime
+    getBuildUser = this.&getBuildUser
+    gitSha = this.&gitSha
+}

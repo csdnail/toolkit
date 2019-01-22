@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+apply from: './script/git.gradle'
+
+android {
+    compileSdkVersion app_config.compileSdkVersion
+
+    defaultConfig {
+        applicationId app_config.applicationId
+        minSdkVersion app_config.minSdkVersion
+        targetSdkVersion app_config.targetSdkVersion
+        versionCode app_config.versionCode
+        versionName app_config.versionName
+
+        multiDexEnabled true
+        multiDexKeepProguard file("keep_in_main_dex.txt")
+
+        buildConfigField "String", "PLATFORM", "\"all\""
+
+        buildConfigField "String", "GIT_REVISION", "\"${getGitVersion()}\""
+        buildConfigField "String", "BUILD_USER", "\"${getBuildUser()}\""
+
+        resConfigs "en"
+        ndk {
+            abiFilters 'armeabi'
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName(), CARD_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            buildConfigField "String", "BUGLY_APPID", "\"\""
+        }
+
+        release {
+            buildConfigField "String", "BUGLY_APPID", "\"\""
+
+            minifyEnabled true
+            debuggable false
+            zipAlignEnabled true
+            shrinkResources true
+            pseudoLocalesEnabled true
+            proguardFiles 'proguard/proguard-android-optimize.txt'
+        }
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        textReport false
+        htmlReport false
+        xmlReport false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation library_version.support_v4
+    implementation library_version.constraint_layout
+    implementation library_version.appcompat_v7
+
+    implementation project(':logger')
+    implementation project(':basecomponent')
+}

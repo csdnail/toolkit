@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen5dp">5dp</dimen>
+    <dimen name="dimen10dp">10dp</dimen>
+    <dimen name="dimen15dp">15dp</dimen>
+    <dimen name="dimen20dp">20dp</dimen>
+    <dimen name="dimen30dp">30dp</dimen>
+    <dimen name="dimen40dp">40dp</dimen>
+    <dimen name="dimen100dp">100dp</dimen>
+    <dimen name="dimen13dp">13dp</dimen>
+    <dimen name="dimen12dp">12dp</dimen>
+    <dimen name="dimen45dp">45dp</dimen>
+    <dimen name="dimen3dp">3dp</dimen>
+    <dimen name="dimen16dp">16dp</dimen>
+    <dimen name="dimen25dp">25dp</dimen>
+    <dimen name="dimen1dp">1dp</dimen>
+    <dimen name="dimen11dp">11dp</dimen>
+    <dimen name="dimen60dp">60dp</dimen>
+    <dimen name="dimen50dp">50dp</dimen>
+    <dimen name="dimen35dp">35dp</dimen>
+    <dimen name="dimen17dp">17dp</dimen>
+    <dimen name="dimen120dp">120dp</dimen>
+    <dimen name="dimen2dp">2dp</dimen>
+    <dimen name="dimen8dp">8dp</dimen>
+    <dimen name="dimen4dp">4dp</dimen>
+    <dimen name="dimen7dp">7dp</dimen>
+    <dimen name="dimen14dp">14dp</dimen>
+    <dimen name="dimen0dp">0dp</dimen>
+    <dimen name="dimen6dp">6dp</dimen>
+    <dimen name="dimen24dp">24dp</dimen>
+    <dimen name="dimen18dp">18dp</dimen>
+    <dimen name="tsize_16">16dp</dimen>
+    <dimen name="tsize_14">14dp</dimen>
+    <dimen name="tsize_12">12dp</dimen>
+    <dimen name="tsize_11">11dp</dimen>
+    <dimen name="tsize_9">9dp</dimen>
+
+
+    <!--首页-->
+    <!--列表顶部圆角矩形高度-->
+    <dimen name="main_foot_height">45dp</dimen><!--首页底部导航栏高度-->
+    <!--圈子栏高度-->
+    <!--圈子栏标题高度-->
+    <!--负反馈弹窗-->
+
+
+    <dimen name="main_toolbar_height">40dp</dimen>
+
+    <!--首页tiny和nadou是平级时候TAB的高度-->
+    <dimen name="main_home_head_height">44dp</dimen>
+
+    <dimen name="home_footer_height">45dp</dimen>
+
+    <dimen name="home_follow_recommend_subscribe_width">65dp</dimen>
+    <dimen name="home_follow_recommend_subscribe_leftMargin">15dp</dimen>
+
+    <dimen name="coin_tip_main_activity_triangle_height">10dp</dimen>
+
+    <dimen name="share_wrapper_height_full">260dp</dimen>
+    <dimen name="share_wrapper_height_half">155dp</dimen>
+
+</resources>
